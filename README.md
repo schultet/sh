@@ -14,10 +14,14 @@ Scripts:
 
 *caps_to_esc.sh*, *gg.sh*:
 
-Just source them in your .bashrc, .bashrc_profile, .profile, etc.
-Example:
+Just source them in your shell/bash. Example:
 
+```sh
     . gg.sh
+```
+
+To use them permanently, extend your .bashrc, .bashrc_profile, .profile, etc.
+with the respective command.
 
 
 ## Who do I talk to?
