@@ -17,7 +17,7 @@ Scripts:
 Just source them in your shell/bash. Example:
 
 ```sh
-sh $ . gg.sh
+$ . gg.sh
 ```
 
 To use them permanently, extend your .bashrc, .bashrc_profile, .profile, etc.
