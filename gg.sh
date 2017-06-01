@@ -27,6 +27,11 @@ gg() {
     return
   fi
 
+  for d in ${GG_ROOT[@]}; do
+    proj_path=$d/$1/$2
+    if [ -d $proj_path ]; then cd $proj_path; return; fi
+  done
+
   i=0
   for d in ${GG_ROOT[@]}; do
     usr_path=$d/$1
@@ -43,12 +48,12 @@ gg() {
           if [ -d $proj_path ]; then rm -d $proj_path; fi
           if ! [ "$(ls -A $user_path)" ]; then rm -d $user_path; fi
       fi
+
+      # If path exists, cd into it and break loop
+      if [ -d $proj_path ]; then cd $proj_path; break; fi
     fi
 
     let i=${i}+1
-
-    # If path exists, cd into it and break loop
-    if [ -d $proj_path ]; then cd $proj_path; break; fi
   done
 }
 
