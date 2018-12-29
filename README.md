@@ -1,7 +1,5 @@
 # sh
 
-## What is this repository for?
-
 This repository contains useful shell scripts I use all the time. It's main
 purpose is to have them all in one place and to provide documentation.
 
@@ -24,6 +22,6 @@ To use them permanently, extend your .bashrc, .bashrc_profile, .profile, etc.
 with the respective command.
 
 
-## Who do I talk to?
+## Contact
 Tim Schulte
 schultetp@gmail.com
